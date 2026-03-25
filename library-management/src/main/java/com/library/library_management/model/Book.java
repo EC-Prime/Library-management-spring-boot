@@ -1,6 +1,5 @@
 package model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,8 +14,6 @@ import lombok.Setter;
 @AllArgsConstructor //generate full constructor
 
 public class Book {
-
-
     //Fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,6 +28,4 @@ public class Book {
     private String isbn;
 
     private boolean available; // True or false only
-
-
 }
