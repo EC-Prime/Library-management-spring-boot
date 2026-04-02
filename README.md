@@ -6,14 +6,14 @@ Description:
     Built as part of a research-based assignment.
 
 Tech Stack:
-    -Spring Boot
-    -Java 25
-    -H2
-    -Lombok
-    -Maven
-    -Spring Data JPA
-    -Hibernate
-    -MySQL
+    Spring Boot
+    Java 25
+    H2
+    Lombok
+    Maven
+    Spring Data JPA
+    Hibernate
+    MySQL
 
 How to run the project
 -
