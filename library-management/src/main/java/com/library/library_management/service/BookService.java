@@ -51,4 +51,20 @@ public class BookService {
     public Optional<Book> searchByIsbn(String isbn) {
         return bookRepository.findByIsbn(isbn);
     }
+
+    // Update an existing book
+    public Book updateBook(Long id, Book updatedBook) {
+        Book existingBook = getBookById(id);
+        existingBook.setTitle(updatedBook.getTitle());
+        existingBook.setAuthor(updatedBook.getAuthor());
+        existingBook.setIsbn(updatedBook.getIsbn());
+        existingBook.setAvailable(updatedBook.isAvailable());
+        return bookRepository.save(existingBook);
+    }
+
+    // Delete a book by ID
+    public void deleteBook(Long id) {
+        getBookById(id);
+        bookRepository.deleteById(id);
+    }
 }
